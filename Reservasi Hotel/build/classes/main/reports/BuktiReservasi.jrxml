@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="612" pageHeight="792" columnWidth="612" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="nama" class="java.lang.String"/>
+	<field name="kelamin" class="java.lang.String"/>
+	<field name="kode_reservasi" class="java.lang.String"/>
+	<field name="tanggal_buat" class="java.lang.String"/>
+	<field name="tanggal_masuk" class="java.lang.String"/>
+	<field name="tanggal_keluar" class="java.lang.String"/>
+	<field name="type" class="java.lang.String"/>
+	<field name="harga" class="java.lang.String"/>
+	<field name="kapasitas" class="java.lang.String"/>
+	<field name="no_identitas" class="java.lang.String"/>
+	<field name="telpon" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="218" height="56"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THE JAKS HOTEL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="505" splitType="Stretch">
+			<line>
+				<reportElement x="34" y="16" width="539" height="1"/>
+			</line>
+			<line>
+				<reportElement x="34" y="17" width="1" height="32" />
+			</line>
+			<line>
+				<reportElement x="572" y="16" width="1" height="32" />
+			</line>
+			<line>
+				<reportElement x="35" y="48" width="536" height="1" />
+			</line>
+			<line>
+				<reportElement x="34" y="60" width="539" height="1" />
+			</line>
+			<line>
+				<reportElement x="34" y="61" width="1" height="66" />
+			</line>
+			<line>
+				<reportElement x="572" y="61" width="1" height="66" />
+			</line>
+			<line>
+				<reportElement x="35" y="127" width="536" height="1" />
+			</line>
+			<staticText>
+				<reportElement x="44" y="25" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE RESERVASI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="153" y="25" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="25" width="65" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="25" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="33" y="140" width="538" height="219" />
+			</rectangle>
+			<staticText>
+				<reportElement x="44" y="71" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA TAMU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="71" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="103" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[JENIS KELAMIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="104" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="462" width="124" height="39" />
+				<box>
+					<pen lineColor="#33FF33"/>
+					<topPen lineColor="#33FF33"/>
+					<leftPen lineColor="#33FF33"/>
+					<bottomPen lineColor="#33FF33"/>
+					<rightPen lineColor="#33FF33"/>
+				</box>
+				<textElement>
+					<font size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BOOKED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="202" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA HOTEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="235" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TYPE KAMAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="264" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL MASUK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="263" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TANGGAL KELUAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="294" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[HARGA KAMAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="323" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[KAPASITAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="202" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="235" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="263" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="414" y="262" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="294" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="155" y="323" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="172" y="72" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="104" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="25" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{kode_reservasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="23" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{tanggal_buat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="235" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="264" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{tanggal_masuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="431" y="263" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{tanggal_keluar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="294" width="193" height="20" />
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="323" width="100" height="20" />
+				<textFieldExpression><![CDATA[$F{kapasitas}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Opaque" x="34" y="375" width="536" height="75" forecolor="#000000" backcolor="#FFFFFF" />
+			</rectangle>
+			<frame>
+				<reportElement x="48" y="154" width="511" height="1" />
+				<box rightPadding="0">
+					<pen lineWidth="30.0" lineColor="#3399FF"/>
+					<topPen lineWidth="30.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="30.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="30.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="30.0" lineColor="#3399FF"/>
+				</box>
+			</frame>
+			<frame>
+				<reportElement x="47" y="389" width="509" height="2" />
+				<box rightPadding="0">
+					<pen lineWidth="30.0" lineColor="#3399FF"/>
+					<topPen lineWidth="30.0" lineColor="#3399FF"/>
+					<leftPen lineWidth="30.0" lineColor="#3399FF"/>
+					<bottomPen lineWidth="30.0" lineColor="#3399FF"/>
+					<rightPen lineWidth="30.0" lineColor="#3399FF"/>
+				</box>
+			</frame>
+			<staticText>
+				<reportElement x="290" y="72" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO IDENTITAS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="71" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="103" width="100" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TELPON]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="397" y="103" width="17" height="20" />
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="414" y="72" width="142" height="20" />
+				<textFieldExpression><![CDATA[$F{no_identitas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="103" width="145" height="20" />
+				<textFieldExpression><![CDATA[$F{telpon}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="35" y="375" width="535" height="34" />
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[METODE PEMBAYARAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="140" width="535" height="34" />
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DETAIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="409" width="535" height="34" />
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[BCA, MANDIRI, CASH, BNI]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="103" splitType="Stretch">
+			<frame>
+				<reportElement x="46" y="34" width="509" height="2" />
+				<box rightPadding="0">
+					<pen lineWidth="30.0" lineColor="#999999"/>
+					<topPen lineWidth="30.0" lineColor="#999999"/>
+					<leftPen lineWidth="30.0" lineColor="#999999"/>
+					<bottomPen lineWidth="30.0" lineColor="#999999"/>
+					<rightPen lineWidth="30.0" lineColor="#999999"/>
+				</box>
+			</frame>
+			<staticText>
+				<reportElement x="35" y="19" width="535" height="34" />
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[APA BILA MEMERLUKAN BANTUAN, HUBUNGI TELP : 911 / E-MAIL : cs@jakshotel.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="56" width="100" height="20" />
+				<textElement textAlignment="Center">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[JAKSHOTEL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="33" y="77" width="537" height="20" />
+				<textElement textAlignment="Center">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[JALAN RAYA CONDET, PASAR REBO, JAKARTA TIMUR, Daerah Khusus Ibukota Jakarta 13760]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
